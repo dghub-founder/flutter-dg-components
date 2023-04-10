@@ -111,7 +111,7 @@ class DGComponentsInstall {
           (rec) => {print("${rec.level.name}: ${rec.time} : ${rec.message}")});
     }
     if (!kIsWeb) {
-      if (!Platform.isAndroid) {
+      if (Platform.isWindows) { 
         doWhenWindowReady(() {
           final win = appWindow;
           const initialSize = Size(400, 600);

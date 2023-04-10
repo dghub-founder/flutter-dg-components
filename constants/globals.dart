@@ -40,7 +40,7 @@ Setting? settings = storage.read('setting') == null
     ? null
     : Setting.fromJson(jsonDecode(storage.read('setting')));
 
-String defaultTheme = storage.read('default_theme') ?? 'dark_default';
+String defaultTheme = storage.read('default_theme') ?? 'dark_red';
 
 late bool isDarkTheme;
 
